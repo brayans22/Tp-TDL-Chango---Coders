@@ -1,165 +1,129 @@
 /* You can add global styles to this file, and also import other style files */
 
-html{
+:root {
+    --rojo: rgba(255, 55, 55, 0.768);
+    --fondo: white;
+}
+
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
-    font-size: 60.5%;
 }
 
-*,*::before,*::after{
-    box-sizing: inherit;
-}
-
-.img-fondo{
-background-image: url(tienda.jpg);
-}
-img{
+body {
+    background-image: url("https://st4.depositphotos.com/18561698/24796/i/450/depositphotos_247965220-stock-photo-healthy-food-background-fresh-berries.jpg");
+    font-family: sans-serif;
     width: 100%;
 }
-.velo-negro{
-    background-color:rgba(0, 0, 0, 0.5);
+
+.contenedor{
+    width: 90%;
+    margin : auto;
 }
 
-.Contenido-principal-pagina-de-inicio{
-    max-width: 120rem;
-    margin: 0 auto;
+header{
+    padding: 30px 0;
 }
 
-.header{
+header.contenedor{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.logo-img{
-    max-width: 40rem;
-    margin: 3rem 0;
+header .logotipo{
+    font-family: monospace;
+    color: var(--rojo);
+    font-size: 40px;
 }
 
-nav{
-    margin: 3rem 0 8rem 0;
-    background-color: rgba(255, 55, 55, 0.768);
-    padding: 2rem;
-    display: flex;
-    justify-content: center;
-    gap: 10rem;
-}
-a{
+header .eslogan{
+    color: rgba(255, 55, 55, 0.768);
     text-decoration: none;
+    margin-right: 20px;
+    font-size: 12px;
+    margin-block-end: 15px;
 }
-nav a{
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 800;
-    font-size: 3rem;
+
+header nav a{
+    font-size: 20px;
+    font-family: monospace;
+    align-self: center;
+    background-color: rgba(255, 55, 55, 0.768);
     color: white;
-    text-transform: uppercase;
-}
-nav a:hover{
-    color: black;
+    text-decoration: none;
+    margin-right: 240px;
 }
 
-.ofertas-de-la-semana{
-    font-family: Arial, Helvetica, sans-serif;
+header nav a:hover,
+header nav a.activo{
+    background-color: #AAAA;
+}
+
+.producto-principal{
+    font-size: 16px;
+    min-height: 40.62em;
+    color: #ffffff;
+    background: linear-gradient(rgba(197, 197, 197, 0.768) 0%, rgba(177, 177, 177, 0.768) 100%), url("https://img.freepik.com/foto-gratis/zanahoria-aislado-sobre-fondo-blanco_280340-1355.jpg");
+    background-position: center;
+
+
+
+}
+
+
+.Producto-recomendado-del-mes{
+    margin-bottom: 70px;
+}
+
+.Producto-recomendado-del-mes .contenedor-principal {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.Producto-recomendado-del-mes .contenedor-principal .flecha-izquierda,
+.Producto-recomendado-del-mes .contenedor-principal .flecha-derecha{
+    position: absolute;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.3);
+    font-size: 40px;
+    height: 50px;
+    top: calc(50% - 25%);
+    line-height: 40px;
+    width: 50px;
     color: white;
-    font-size: 4rem;
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: 800;
+    cursor: pointer;
+    z-index: 500;
+    transition: .2s ease all;
+
 }
 
-.productos{
-   display: grid;
-   grid-template-columns: repeat(3,1fr);
 
-   
-}
-.producto{
-    background-color: rgba(255, 55, 55, 0.768);;
-    margin: 2rem;
-    padding: 2rem;
-}
 
-.producto-b{
-    background-color: white;
-    height: 40rem;
-    object-fit: contain;
-    padding: 1rem;
-}
 
-.producto-precio{
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    text-transform: uppercase;
-    text-align: center;
-    font-size: 2.5rem;
-    font-weight: 500;
-}
-.producto-nombre{
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    text-transform: uppercase;
-    text-align: center;
-    font-size: 3rem;
-    font-weight: 800;
-}
 
+
+
+
+
+
+
+/* Diseños para el footer */
 .footer{
-    background-color: black;
-    padding: 3.5rem;
+    background-color: var(--rojo);
+    padding: 1rem;
     font-family: Arial, Helvetica, sans-serif;
     padding-bottom: 2rem;
     color: white;
-    font-size: 2rem;
+    font-size: 1rem;
     text-align: center;
-}
-
-.nosotros{
-display: grid;
-grid-template-columns: repeat(2,1fr);
-gap: 10rem;
-margin-bottom: 20rem;
-
-}
-.nosotros-texto{
-    color: white;
-    font-size: 3rem;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.nosotros-img{
-    background-color: white;
-    border-radius: 5%;
-}
-
-.bloques{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    gap: 20rem;
-}
-
-.bloques img{
-    width: 20rem;
-    margin-bottom: 2rem;
-    height: 20rem;
-}
-.bloque-titulo{
-    margin:0;
-}
-
-.bloque{
-    text-align: center;
-    color: white;
-    font-size: 3rem;
-    font-family: Arial, Helvetica, sans-serif;
-    margin-bottom: 5rem;
-}
-.bloque-titulo{
-    color: red;
-    font-size: 4rem;
-    margin: 3rem;
-    text-transform: uppercase;
-    font-weight: 800;
 }
 
 .enlace-footer:hover{
-    padding-left: 1rem;
-    padding-right: 1rem;
+    height: 10px;
+    width: 10px;
+    margin-left: 2px;
+    margin-right: 2px;
 }

@@ -1,117 +1,92 @@
-/* You can add global styles to this file, and also import other style files */
+/* 
+You can add global styles to this file, and also import other style files 
 
-:root {
-    --rojo: rgba(255, 55, 55, 0.768);
-    --fondo: white;
+ACA TENEMOS QUE PONER EL CODIGO DE CSS QUE TIENEN EN COMUN LOS CSS DE CADA
+COMPONENTE, POR EJEMPLO: HEADER, PIE DE PAGINA, CONTENEDOR, FONDO DE 
+LA PAGINA, MARGEN DE CADA PAGINA, ECT....
+*/
+
+/* DISEÑOS CSS HEADER DE LA PAGINA */
+header {
+	padding: 30px 0;
+    background-color: rgba(246, 236, 236, 0.768);
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+header .contenedor {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 
-body {
-    background-image: url("https://st4.depositphotos.com/18561698/24796/i/450/depositphotos_247965220-stock-photo-healthy-food-background-fresh-berries.jpg");
-    font-family: sans-serif;
-    width: 100%;
-}
-
-.contenedor{
-    width: 90%;
-    margin : auto;
-}
-
-header{
-    padding: 30px 0;
-}
-
-header.contenedor{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-header .logotipo{
-    font-family: monospace;
-    color: var(--rojo);
-    font-size: 40px;
+header .logotipo {
+	font-family: monospace;
+	font-weight: normal;
+	color: var(--rojo);
+	font-size: 100px;
+    margin-block-end: 10px;
 }
 
 header .eslogan{
     color: rgba(255, 55, 55, 0.768);
     text-decoration: none;
-    margin-right: 20px;
-    font-size: 12px;
-    margin-block-end: 15px;
+    font-size: 30px;
+    margin-left: 350px;
+   
 }
 
-header nav a{
-    font-size: 20px;
-    font-family: monospace;
-    align-self: center;
-    background-color: rgba(255, 55, 55, 0.768);
-    color: white;
-    text-decoration: none;
-    margin-right: 240px;
+header nav a {
+	color: white;
+    background-color: var(--rojo);
+	text-decoration: none;
+    font-size: 70px;
+	margin-right: 20px;
 }
 
 header nav a:hover,
-header nav a.activo{
-    background-color: #AAAA;
-}
-
-.producto-principal{
-    font-size: 16px;
-    min-height: 40.62em;
-    color: #ffffff;
-    background: linear-gradient(rgba(197, 197, 197, 0.768) 0%, rgba(177, 177, 177, 0.768) 100%), url("https://img.freepik.com/foto-gratis/zanahoria-aislado-sobre-fondo-blanco_280340-1355.jpg");
-    background-position: center;
-
-
-
+header nav a.activo {
+	color: #AAAA;
 }
 
 
-.Producto-recomendado-del-mes{
-    margin-bottom: 70px;
+.login .header{
+	color: white;
+	background-color: rgba(255, 55, 55, 0.768);
 }
 
-.Producto-recomendado-del-mes .contenedor-principal {
-    display: flex;
-    align-items: center;
-    position: relative;
-}
-
-.Producto-recomendado-del-mes .contenedor-principal .flecha-izquierda,
-.Producto-recomendado-del-mes .contenedor-principal .flecha-derecha{
-    position: absolute;
-    border: none;
-    background-color: rgba(0, 0, 0, 0.3);
+.login .body{
+	color: white;
+	background-color: rgba(255, 55, 55, 0.768);
     font-size: 40px;
-    height: 50px;
-    top: calc(50% - 25%);
-    line-height: 40px;
-    width: 50px;
-    color: white;
-    cursor: pointer;
-    z-index: 500;
-    transition: .2s ease all;
-
 }
 
 
 
+/* DISEÑOS CSS PARA EL CONTENIDO DE LA PAGINA */
 
+:root {
+	--rojo: rgba(255, 55, 55, 0.768);
+	--fondo: white;
+}
 
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
 
+body {
+    background-image: url("https://st4.depositphotos.com/18561698/24796/i/450/depositphotos_247965220-stock-photo-healthy-food-background-fresh-berries.jpg");
+	font-family: 'Open Sans', sans-serif;
+}
 
+.contenedor {
+	width: 90%;
+	margin: auto;
+}
 
-
-
-
-/* Diseños para el footer */
+/* DISEÑOS CSS DEL PIE DE PAGINA */
 .footer{
+    /*rgba(255, 55, 55, 0.768);*/
     background-color: var(--rojo);
     padding: 1rem;
     font-family: Arial, Helvetica, sans-serif;
@@ -126,4 +101,21 @@ header nav a.activo{
     width: 10px;
     margin-left: 2px;
     margin-right: 2px;
+}
+
+.footer .letra-pie-de-pagina{
+    font-size: 35px;
+}
+
+/* ---- ----- ----- Media Queries Header ----- ----- ----- */
+@media screen and (max-width: 800px) {
+	header .logotipo {
+		margin-bottom: 10px;
+		font-size: 30px;
+	}
+
+	header .contenedor {
+		flex-direction: column;
+		text-align: center;
+	}
 }

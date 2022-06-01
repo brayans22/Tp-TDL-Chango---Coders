@@ -1,89 +1,200 @@
-
-  <!--- HEADER PAGINA -->
+<!--- HEADER PAGINA DE INICIO -->
 <header>
+		<div class = "contenedor" >
 
-  <div class = "contenedor" >
-    
-    <h2 class = "logotipo"> CHANGOMARKET </h2>
+      <h1 class = "logotipo"> ChangoMarket </h1>
+      
+			<nav>
+				<a href = "#" class = "activo"> Inicio </a>
+				<a href = "#"> Productos </a>
+				<a href = "#"> Ofertas </a>
+				<a href = "#"> Nosotros </a>
+				<a href = "#"> Sedes </a>
+			</nav>
+
+      <div class = "login">
+        <div class = "header">
+          <b style = "font-size: 45px;"> LOGIN </b>
+        </div>
+
+        <div class = "body">
+          <label> Email </label>
+          <input class = "form-control m-2" style = " font-size: 35px" type = "email" placeholder = " ingrese su email " >
+          <label> Password </label>
+          <input class = "form-control m-2" style = " font-size: 35px " type = "password" placeholder = " ingrese su contraseña ">
+          <button class = "btn btn-primary btn-block" style = " font-size: 35px"> Ingresar </button>
+        </div>
+
+      </div>
+      
+		</div>
     <h6 class = "eslogan"> Chango lleno. Chango feliz! (:</h6>
-    <nav>
-
-      <a href = "#" class = "activo" > Inicio </a>
-      <a href = "#"> Ofertas </a>
-      <a href = "#"> Productos </a>
-      <a href = "#"> Sedes </a>
-      <a href = "#"> Sobre Nosotros </a>
-
-    </nav>
-
-  </div>
-
 </header>
 
+<!--- CONTENIDO PAGINA DE INICIO -->
 <body>
 
-  <div class = "producto-principal">
-    <div class = "contenedor">
-      <h3 class = "titulo" > Zanahoria </h3>
+	<main>
 
-      <p class = "descripcion">
-        Daucus carota subespecie sativus, llamada popularmente zanahoria, es la forma domesticada de la 
-        zanahoria silvestre (Daucus carota), especie de la familia de las umbelíferas , también denominadas apiáceas,
-        y considerada la más importante y de mayor consumo dentro de esta familia.
-      </p>
+    <!--- PRODUCTO PRINCIPAL DEL MES -->
+		<div class = "producto-principal">
 
-      <button role = "button" class = "boton"> Agregar Al Carrito </button>
-      <button role = "button" class = "boton"> Leer Más </button>
+			<div class = "contenedor">
 
-    </div>
-  </div>
+        <h3 class = "titulo" > PRODUCTO DEL MES </h3>
+				
+        <div>
 
-  <!--- FOOTER REDES SOCIALES -->
-  <footer class="footer">
-    <a class="enlace-footer" href="https://www.facebook.com/coto">
-        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 226 226"
-            style=" fill:#000000;">
-            <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
-                stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
-                font-family="none" font-weight="none" font-size="none" text-anchor="none"
-                style="mix-blend-mode: normal">
-                <path d="M0,226v-226h226v226z" fill="rgba(255, 55, 55, 0.768);"></path>
-                <g fill="#ffffff">
-                    <path
-                        d="M113,18.83333c-52.00825,0 -94.16667,42.15842 -94.16667,94.16667c0,52.00825 42.15842,94.16667 94.16667,94.16667c52.00825,0 94.16667,-42.15842 94.16667,-94.16667c0,-52.00825 -42.15842,-94.16667 -94.16667,-94.16667zM113,37.66667c41.60283,0 75.33333,33.7305 75.33333,75.33333c0,37.04891 -26.77936,67.78251 -62.01758,74.08269v-45.50163h22.27263l3.31054,-25.65673h-25.43603v-16.35042c-0.00001,-7.42034 2.06798,-12.43295 12.70882,-12.43295h13.4445v-22.89795c-6.54458,-0.66858 -13.11551,-0.99361 -19.69776,-0.97477c-19.53017,0 -32.90315,11.92003 -32.90315,33.80436v18.88851h-22.07031v25.65673h22.07031v45.52003c-35.40101,-6.16634 -62.34864,-36.97342 -62.34864,-74.13786c0,-41.60283 33.7305,-75.33333 75.33333,-75.33333z">
-                    </path>
-                </g>
-            </g>
-        </svg>
-    </a>
+          <div style = "float: left" >
+            <img 
+              src = "https://coctelia.com/wp-content/uploads/2020/07/fernet-branca-768x1024.jpg" 
+            />
+            <div>
+              <button role = "button" class = "boton"><i class = "fas fa-play"></i> Agregar Al Carrito </button>
+				      <button role = "button" class = "boton"><i class = "fas fa-info-circle"></i> Agregar A Productos Favoritos </button>
+				
+            </div>
+          
+          </div>
 
-    <a class="enlace-footer" href="https://www.instagram.com/chango.naturalmarket/?hl=es">
-        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 172 172"
-            style=" fill:red;">
-            <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
-                stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
-                font-family="none" font-weight="none" font-size="none" text-anchor="none"
-                style="mix-blend-mode: normal">
-                <path d="M0,172v-172h172v172z" fill="rgba(255, 55, 55, 0.768);"></path>
-                <g fill="#ffffff">
-                    <path
-                        d="M86,11.46667c-41.09653,0 -74.53333,33.4368 -74.53333,74.53333c0,41.09653 33.4368,74.53333 74.53333,74.53333c41.09653,0 74.53333,-33.4368 74.53333,-74.53333c0,-41.09653 -33.4368,-74.53333 -74.53333,-74.53333zM66.88516,34.4h38.21849c17.91667,0 32.49636,14.57422 32.49636,32.48516v38.21849c0,17.91667 -14.57423,32.49636 -32.48516,32.49636h-38.21849c-17.91667,0 -32.49636,-14.57423 -32.49636,-32.48516v-38.21849c0,-17.91667 14.57422,-32.49636 32.48516,-32.49636zM66.88516,45.86667c-11.58707,0 -21.01849,9.43689 -21.01849,21.02969v38.21849c0,11.58707 9.43689,21.01849 21.02969,21.01849h38.21849c11.58707,0 21.01849,-9.43689 21.01849,-21.02969v-38.21849c0,-11.58707 -9.43689,-21.01849 -21.02969,-21.01849zM112.76302,55.41849c2.10987,0 3.81849,1.70862 3.81849,3.81849c0,2.10987 -1.70862,3.82969 -3.81849,3.82969c-2.10987,0 -3.82969,-1.71982 -3.82969,-3.82969c0,-2.10987 1.71982,-3.81849 3.82969,-3.81849zM86,57.33333c15.8068,0 28.66667,12.85987 28.66667,28.66667c0,15.8068 -12.85987,28.66667 -28.66667,28.66667c-15.8068,0 -28.66667,-12.85987 -28.66667,-28.66667c0,-15.8068 12.85987,-28.66667 28.66667,-28.66667zM86,68.8c-9.4993,0 -17.2,7.7007 -17.2,17.2c0,9.4993 7.7007,17.2 17.2,17.2c9.4993,0 17.2,-7.7007 17.2,-17.2c0,-9.4993 -7.7007,-17.2 -17.2,-17.2z">
-                    </path>
-                </g>
-            </g>
-        </svg>
-    </a>
+          <div>
 
-  <p> Copyright© 2022-Todos los derechos reservados para chango market </p>
-  </footer>
-    
-<body>
+            <h3 class = "nombre-producto" > FERNET </h3>
+
+            <p class = "descripcion">
+              El fernet es una bebida alcohólica amarga de color oscuro y aroma intenso, elaborada a partir de varios tipos de hierbas 
+              (mirra, ruibarbo, manzanilla, cardamomo y azafrán, entre otras ), que son maceradas en alcohol de uva, filtradas y añejadas 
+              en toneles de roble durante un período que oscila entre 6 y 12 meses, y cuya graduación suele rondar los 45% .
+              El Código Alimentario Argentino (CAA), define al fernet como la bebida con una graduación alcohólica de 0,5% a 54% vol. a 20 °C, 
+              que contiene ciertos principios amargos y/o aromáticos a los cuales se les puede atribuir la propiedad de ser estimulantes del apetito, 
+              obtenidos a partir de extractos de uno o más vegetales o partes de ellos permitidos.
+              
+            
+            </p>
+
+          </div>
+
+        </div>   
+        
+      </div>
+
+		</div>
+
+    <!--- SLIDER PRODUCTOS RECOMENDADOS -->
+    <div class = "productos-recomendados contenedor">
+			<div class = "contenedor-titulo-controles">
+				<h3 style = " font-size: 55px; color:white; 
+                      background: rgba(255, 55, 55, 0.768);
+                      margin-block-end: 30px;
+                    "
+        > Productos Recomendados </h3>
+				<div class = "indicadores"></div>
+			</div>
+
+			<div class = "contenedor-principal">
+				<button role = "button" id="flecha-izquierda" class = "flecha-izquierda"><i class = "fas fa-angle-left"></i></button>
+
+				<div class = "contenedor-carousel">
+					<div class =  "carousel">
+
+						<div class = "producto">
+
+              <h3 style = " font-size: 40px; color:rgba(255, 55, 55, 0.768); background: white; margin-block-end: 10px;" > Coca Cola </h3>
+              <img 
+                  src = "https://thumbs.dreamstime.com/b/frascos-y-puede-coca-cola-sobre-fondo-blanco-chisinau-moldova-de-abril-con-recorrido-recorte-188898630.jpg" 
+                  alt = "Coca" 
+              />
+              
+						</div>
+
+            <div class = "producto">
+
+              <h3 style = " font-size: 40px; color:rgba(255, 55, 55, 0.768); background: white; margin-block-end: 10px;" > Papa </h3>
+              <img 
+                  
+                  src = "https://st.depositphotos.com/1343666/2314/i/450/depositphotos_23146772-stock-photo-yukon-gold-potatoes-isolated.jpg" 
+                  alt = "Papa" 
+              />
+              
+						</div>
+
+            <div class = "producto">
+
+              <h3 style = " font-size: 40px; color:rgba(255, 55, 55, 0.768); background: white; margin-block-end: 10px;" > Mango </h3>
+              <img 
+                  src = "https://mercadoacasa.com/wp-content/uploads/2020/04/image-1.png" 
+                  alt = "Mango" 
+              />
+              
+						</div>
+
+            <div class = "producto">
+
+              <h3 style = " font-size: 40px; color:rgba(255, 55, 55, 0.768); background: white; margin-block-end: 10px;" > Chocolinas </h3>
+              <img 
+                  src = "http://d3ugyf2ht6aenh.cloudfront.net/stores/602/902/products/chocolina-170g1-11b745cd2ad92b3ae615288355010356-640-0.jpg" 
+                  alt = "Chocolinas" 
+              />
+              
+						</div>
 
 
-<script 
-    src = "https://hit.fontawesome.com/2c36e9b7b1.js"
-    crossorigin = "anonymous"
-  >
-</script>
+            <div class = "producto">
 
-<router-outlet></router-outlet>
+              <h3 style = " font-size: 40px; color:rgba(255, 55, 55, 0.768); background: white; margin-block-end: 10px;" > Paty </h3>
+              <img 
+                  src = "https://www.paty.com.ar/assets/site/images/sections/products/packaging-mobile/paty72.jpg?v=0.13" 
+                  alt = "Paty" 
+              />
+              
+						</div>
+					
+					</div>
+				</div>
+
+				<button role = "button" id="flecha-derecha" class = "flecha-derecha"><i class = "fas fa-angle-right"></i></button>
+			</div>
+		</div>
+
+	</main>
+
+</body>
+
+<!--- FOOTER PAGINA DE INICIO -->
+<footer class = "footer">
+  <a class = "enlace-footer" href = "https://www.facebook.com/coto">
+      <svg xmlns = "http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 226 226"
+          style = " fill:#000000;">
+          <g fill = "none" fill-rule = "nonzero" stroke = "none" stroke-width="1" stroke-linecap="butt"
+              stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+              font-family="none" font-weight="none" font-size = "none" text-anchor="none"
+              style = "mix-blend-mode: normal">
+              <path d="M0,226v-226h226v226z" fill = "rgba(255, 55, 55, 0.768);"></path>
+              <g fill = "#ffffff">
+                  <path
+                      d="M113,18.83333c-52.00825,0 -94.16667,42.15842 -94.16667,94.16667c0,52.00825 42.15842,94.16667 94.16667,94.16667c52.00825,0 94.16667,-42.15842 94.16667,-94.16667c0,-52.00825 -42.15842,-94.16667 -94.16667,-94.16667zM113,37.66667c41.60283,0 75.33333,33.7305 75.33333,75.33333c0,37.04891 -26.77936,67.78251 -62.01758,74.08269v-45.50163h22.27263l3.31054,-25.65673h-25.43603v-16.35042c-0.00001,-7.42034 2.06798,-12.43295 12.70882,-12.43295h13.4445v-22.89795c-6.54458,-0.66858 -13.11551,-0.99361 -19.69776,-0.97477c-19.53017,0 -32.90315,11.92003 -32.90315,33.80436v18.88851h-22.07031v25.65673h22.07031v45.52003c-35.40101,-6.16634 -62.34864,-36.97342 -62.34864,-74.13786c0,-41.60283 33.7305,-75.33333 75.33333,-75.33333z">
+                  </path>
+              </g>
+          </g>
+      </svg>
+  </a>
+
+  <a class = "enlace-footer" href = "https://www.instagram.com/chango.naturalmarket/?hl = es">
+      <svg xmlns = "http://www.w3.org/2000/svg" x = "0px" y = "0px" width = "50" height = "50" viewBox= "0 0 172 172"
+          style = " fill:red;">
+          <g fill = "none" fill-rule = "nonzero" stroke = "none" stroke-width="1" stroke-linecap="butt"
+              stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+              font-family=  "none" font-weight = "none" font-size = "none" text-anchor = "none"
+              style = "mix-blend-mode: normal">
+              <path d = "M0,172v-172h172v172z" fill = "rgba(255, 55, 55, 0.768);"></path>
+              <g fill = "#ffffff">
+                  <path
+                      d = "M86,11.46667c-41.09653,0 -74.53333,33.4368 -74.53333,74.53333c0,41.09653 33.4368,74.53333 74.53333,74.53333c41.09653,0 74.53333,-33.4368 74.53333,-74.53333c0,-41.09653 -33.4368,-74.53333 -74.53333,-74.53333zM66.88516,34.4h38.21849c17.91667,0 32.49636,14.57422 32.49636,32.48516v38.21849c0,17.91667 -14.57423,32.49636 -32.48516,32.49636h-38.21849c-17.91667,0 -32.49636,-14.57423 -32.49636,-32.48516v-38.21849c0,-17.91667 14.57422,-32.49636 32.48516,-32.49636zM66.88516,45.86667c-11.58707,0 -21.01849,9.43689 -21.01849,21.02969v38.21849c0,11.58707 9.43689,21.01849 21.02969,21.01849h38.21849c11.58707,0 21.01849,-9.43689 21.01849,-21.02969v-38.21849c0,-11.58707 -9.43689,-21.01849 -21.02969,-21.01849zM112.76302,55.41849c2.10987,0 3.81849,1.70862 3.81849,3.81849c0,2.10987 -1.70862,3.82969 -3.81849,3.82969c-2.10987,0 -3.82969,-1.71982 -3.82969,-3.82969c0,-2.10987 1.71982,-3.81849 3.82969,-3.81849zM86,57.33333c15.8068,0 28.66667,12.85987 28.66667,28.66667c0,15.8068 -12.85987,28.66667 -28.66667,28.66667c-15.8068,0 -28.66667,-12.85987 -28.66667,-28.66667c0,-15.8068 12.85987,-28.66667 28.66667,-28.66667zM86,68.8c-9.4993,0 -17.2,7.7007 -17.2,17.2c0,9.4993 7.7007,17.2 17.2,17.2c9.4993,0 17.2,-7.7007 17.2,-17.2c0,-9.4993 -7.7007,-17.2 -17.2,-17.2z">
+                  </path>
+              </g>
+          </g>
+      </svg>
+  </a>
+
+  <p class = "letra-pie-de-pagina"> Copyright© 2022-Todos los derechos reservados para chango market </p>
+</footer>

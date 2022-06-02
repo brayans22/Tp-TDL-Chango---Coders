@@ -1,72 +1,6 @@
 /* 
 You can add global styles to this file, and also import other style files 
-
-ACA TENEMOS QUE PONER EL CODIGO DE CSS QUE TIENEN EN COMUN LOS CSS DE CADA
-COMPONENTE, POR EJEMPLO: HEADER, PIE DE PAGINA, CONTENEDOR, FONDO DE 
-LA PAGINA, MARGEN DE CADA PAGINA, ECT....
 */
-
-/* DISEÑOS CSS HEADER DE LA PAGINA */
-header {
-	padding: 30px 0;
-    background-color: rgba(246, 236, 236, 0.768);
-}
-
-header .contenedor {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-}
-
-header .logotipo {
-	font-family: monospace;
-	font-weight: normal;
-	color: var(--rojo);
-	font-size: 100px;
-    margin-block-end: 10px;
-}
-
-header .eslogan{
-    color: rgba(255, 55, 55, 0.768);
-    text-decoration: none;
-    font-size: 30px;
-    margin-left: 350px;
-   
-}
-
-header nav a {
-	color: white;
-    background-color: var(--rojo);
-	text-decoration: none;
-    font-size: 70px;
-	margin-right: 20px;
-}
-
-header nav a:hover,
-header nav a.activo {
-	color: #AAAA;
-}
-
-
-.login .header{
-	color: white;
-	background-color: rgba(255, 55, 55, 0.768);
-}
-
-.login .body{
-	color: white;
-	background-color: rgba(255, 55, 55, 0.768);
-    font-size: 40px;
-}
-
-
-
-/* DISEÑOS CSS PARA EL CONTENIDO DE LA PAGINA */
-
-:root {
-	--rojo: rgba(255, 55, 55, 0.768);
-	--fondo: white;
-}
 
 * {
 	margin: 0;
@@ -75,47 +9,6 @@ header nav a.activo {
 }
 
 body {
-    background-image: url("https://st4.depositphotos.com/18561698/24796/i/450/depositphotos_247965220-stock-photo-healthy-food-background-fresh-berries.jpg");
+    background-image: url('https://st4.depositphotos.com/18561698/24796/i/450/depositphotos_247965220-stock-photo-healthy-food-background-fresh-berries.jpg');
 	font-family: 'Open Sans', sans-serif;
-}
-
-.contenedor {
-	width: 90%;
-	margin: auto;
-}
-
-/* DISEÑOS CSS DEL PIE DE PAGINA */
-.footer{
-    /*rgba(255, 55, 55, 0.768);*/
-    background-color: var(--rojo);
-    padding: 1rem;
-    font-family: Arial, Helvetica, sans-serif;
-    padding-bottom: 2rem;
-    color: white;
-    font-size: 1rem;
-    text-align: center;
-}
-
-.enlace-footer:hover{
-    height: 10px;
-    width: 10px;
-    margin-left: 2px;
-    margin-right: 2px;
-}
-
-.footer .letra-pie-de-pagina{
-    font-size: 35px;
-}
-
-/* ---- ----- ----- Media Queries Header ----- ----- ----- */
-@media screen and (max-width: 800px) {
-	header .logotipo {
-		margin-bottom: 10px;
-		font-size: 30px;
-	}
-
-	header .contenedor {
-		flex-direction: column;
-		text-align: center;
-	}
 }

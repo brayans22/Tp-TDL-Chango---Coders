@@ -3,15 +3,17 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './home/header/header.component';
-import { FooterComponent } from './home/footer/footer.component';
-import { InicioComponent } from './home/inicio/inicio.component';
+import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
+import { LoginComponent } from './login/login.component';
+import { InicioComponent } from './inicio/inicio.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     FooterComponent,
+    LoginComponent,
     InicioComponent
   ],
   imports: [
@@ -21,6 +23,4 @@ import { InicioComponent } from './home/inicio/inicio.component';
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { 
-  
-}
+export class AppModule { }

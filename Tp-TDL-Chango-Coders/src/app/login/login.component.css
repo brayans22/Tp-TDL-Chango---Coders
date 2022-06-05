@@ -1,8 +1,68 @@
-.login {
-	margin-left: 200px;
-	color: white;
-	background-color: rgba(255, 55, 55, 0.768);
-	color: white;
-	background-color: rgba(255, 55, 55, 0.768);
-    font-size: 20px;
-}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+  }
+  
+  body {
+	font-family: sans-serif;
+	background: #4e4d4d00;
+  }
+  
+  .form-login {
+	width: 400px;
+	height: 340px;
+	margin: auto;
+	margin-top: 180px;
+	box-shadow: 7px 13px 37px rgba(187, 72, 72, 0);
+	padding: 20px 30px;
+	color: rgb(0, 0, 0);
+  }
+  
+  .form-login h5 {
+	margin: 0;
+	text-align: center;
+	height: 40px;
+	margin-bottom: 30px;
+	border-bottom: 1px solid;
+	font-size: 20px;
+  }
+  
+  .controls {
+	width: 100%;
+	border: 1px solid #19bdfd;
+	margin-bottom: 15px;
+	padding: 11px 10px;
+	background: #252323;
+	font-size: 14px;
+	font-weight: bold;
+  }
+  
+  .buttons {
+	  position: absolute;
+	  top: 36%;
+	  left: 50%;
+	  transform: translate(-50%, -50%);
+	  padding: 25px;
+	  min-width: 250px;
+	  display: flex;
+	  justify-content: space-around;
+	}
+	
+  .form-login p{
+	height: 40px;
+	text-align: center;
+	border-bottom: 1px solid;
+  }
+  
+  .form-login a {
+	color: rgb(0, 0, 0);
+	text-decoration: none;
+	font-size: 20px;
+  }
+  
+  .form-login a:hover {
+	text-decoration: underline;
+  }
+  
+  

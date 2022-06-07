@@ -3,13 +3,12 @@
 	margin: auto;
 }
 
-/* ---- ----- ----- PRINCIPAL ----- ----- ----- */
+/* ---- ----- ----- PRODUCTO PRINCIPAL ----- ----- ----- */
 .principal {
 	font-size: 16px;
 	min-height: 40.62em;
 	color: #fff;
-	background: linear-gradient( rgba(255, 55, 55, 0.768) 40%, rgba(255, 116, 116, 0.768) 60% );
-
+	background: linear-gradient( rgba(255, 55, 55, 0.768) 40%, rgba(248, 233, 233, 0.768) 60% );
     background-position: center center;
 	background-size: cover;
 	margin-bottom: 3.12em;

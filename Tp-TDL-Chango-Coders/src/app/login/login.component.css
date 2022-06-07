@@ -12,11 +12,11 @@
   .form-login {
 	width: 400px;
 	height: 340px;
-	margin: auto;
-	margin-top: 180px;
 	box-shadow: 7px 13px 37px rgba(187, 72, 72, 0);
 	padding: 20px 30px;
 	color: rgb(0, 0, 0);
+	margin-left: 10%;
+	margin-top: 6%;
   }
   
   .form-login h5 {
@@ -37,17 +37,29 @@
 	font-size: 14px;
 	font-weight: bold;
   }
+
   
-  .buttons {
-	  position: absolute;
-	  top: 36%;
-	  left: 50%;
-	  transform: translate(-50%, -50%);
-	  padding: 25px;
-	  min-width: 250px;
-	  display: flex;
-	  justify-content: space-around;
-	}
+/* DISEÑOS CSS DEL PIE DE PAGINA */
+#fondo{
+    background-color: rgba(255, 55, 55, 0.768);
+    padding: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 2rem;
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.box{
+	background-color: wheat;
+	width: 33%;
+	height: 61%;
+	position: absolute;
+	left: 33%;
+	top: 20%;
+}
+  
+
 	
   .form-login p{
 	height: 40px;

@@ -8,6 +8,7 @@ import { FooterComponent } from './home/footer/footer.component';
 import { LoginComponent } from './login/login.component';
 import { InicioComponent } from './home/inicio/inicio.component';
 import { HomeComponent } from './home/home.component';
+import { DataServices } from './data.services';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,7 @@ import { HomeComponent } from './home/home.component';
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [DataServices],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

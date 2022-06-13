@@ -1,11 +1,10 @@
-
-
 /* You can add global styles to this file, and also import other style files */
 
 html, body { height: 100%; }
 body { 
 	margin: 0;
-	background-color: #F2F2F2;
+	background-image: 
+	url('https://st4.depositphotos.com/18561698/24796/i/450/depositphotos_247965220-stock-photo-healthy-food-background-fresh-berries.jpg');
 	font-family: 'Open Sans', sans-serif;
 }
 

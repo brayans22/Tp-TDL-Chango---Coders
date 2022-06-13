@@ -9,6 +9,10 @@ import { LoginComponent } from './login/login.component';
 import { InicioComponent } from './home/inicio/inicio.component';
 import { HomeComponent } from './home/home.component';
 import { DataServices } from './data.services';
+import { ProductosComponent } from './productos/productos.component';
+import { OfertasComponent } from './ofertas/ofertas.component';
+import { NosotrosComponent } from './nosotros/nosotros.component';
+import { SedesComponent } from './sedes/sedes.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +21,11 @@ import { DataServices } from './data.services';
     FooterComponent,
     LoginComponent,
     InicioComponent,
-    HomeComponent
+    HomeComponent,
+    ProductosComponent,
+    OfertasComponent,
+    NosotrosComponent,
+    SedesComponent
   ],
   imports: [
     BrowserModule,

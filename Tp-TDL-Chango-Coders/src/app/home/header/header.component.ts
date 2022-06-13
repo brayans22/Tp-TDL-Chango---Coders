@@ -6,6 +6,7 @@ import { Router } from '@angular/router';
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.css']
 })
+
 export class HeaderComponent implements OnInit {
 
   constructor(private router: Router) { }
@@ -15,6 +16,22 @@ export class HeaderComponent implements OnInit {
 
   irAlLogin(){
     this.router.navigate(['/login']);
+  }
+
+  irAProductos(){
+    this.router.navigate(['/productos']);
+  }
+
+  irANosotros(){
+    this.router.navigate(['/nosotros']);
+  }
+
+  irASedes(){
+    this.router.navigate(['/sedes']);
+  }
+
+  irAOfertas(){
+    this.router.navigate(['/ofertas']);
   }
 
 }

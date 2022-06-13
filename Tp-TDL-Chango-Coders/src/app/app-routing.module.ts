@@ -8,11 +8,11 @@ import { NosotrosComponent } from './nosotros/nosotros.component';
 import { SedesComponent } from './sedes/sedes.component';
 
 const routes: Routes = [
-  {path:'', component:HomeComponent},
-  {path:'', component:ProductosComponent},
-  {path:'', component:OfertasComponent},
-  {path:'', component:NosotrosComponent},
-  {path:'', component:SedesComponent},
+  {path:'inicio', component:HomeComponent},
+  {path:'productos', component:ProductosComponent},
+  {path:'ofertas', component:OfertasComponent},
+  {path:'nosotros', component:NosotrosComponent},
+  {path:'sedes', component:SedesComponent},
   {path:'login',component:LoginComponent}
 ];
 

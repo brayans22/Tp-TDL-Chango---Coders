@@ -17,4 +17,24 @@ export class HeaderComponent implements OnInit {
     this.router.navigate(['/login']);
   }
 
+  irAlInicio(){
+    this.router.navigate(['/inicio']);
+  }
+
+  irAProductos(){
+    this.router.navigate(['/productos']);
+  }
+
+  irANosotros(){
+    this.router.navigate(['/nosotros']);
+  }
+
+  irAOfertas(){
+    this.router.navigate(['/ofertas']);
+  }
+
+  irASedes(){
+    this.router.navigate(['/sedes']);
+  }
+
 }

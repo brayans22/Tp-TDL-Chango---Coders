@@ -12,12 +12,22 @@
 
   <nav>
 
-    <div class = "botones-navegador"> 
-      <a href = "#" class = "activo"> Inicio </a>
-      <a href = "../../productos/productos.component.html"> Productos </a>
-      <a href = "../../ofertas/ofertas.component.html"> Ofertas </a>
-      <a href = "../../nosotros/nosotros.component.html"> Nosotros </a>
-      <a href = "../../sedes/sedes.component.html"> Sedes </a>
+    <div class = "botones-navegador">
+      <button (click) = "irAlInicio()"  >
+        Inicio
+      </button>
+      <button (click) = "irAProductos()"  >
+        Productos
+      </button>
+      <button (click) = "irAOfertas()"  >
+        Ofertas
+      </button>
+      <button (click) = "irANosotros()"  >
+        Nosotros
+      </button>
+      <button (click) = "irASedes()"  >
+        Sedes
+      </button>
     </div>
     
   </nav>

@@ -1,25 +1,34 @@
 
 <header class = "contenedor" >
-  
 
-  <div class = "espacio-login" style = "float: right"> 
-    <button (click) = "irAlLogin()"  >
-      Ingresar
-    </button>
-  </div>
-
-  <h1 class = "logotipo"> ChangoMarket </h1>
-
-  <nav>
-
-    <div class = "botones-navegador"> 
-      <a href = "../../home/home.component.html"> Inicio </a>
-      <a href = "#" class = "activo"> Productos </a>
-      <a href = "../../ofertas/ofertas.component.html"> Ofertas </a>
-      <a href = "../../nosotros/nosotros.component.html" > Nosotros </a>
-      <a href = "../../sedes/sedes.component.html"> Sedes </a>
+    <div class = "espacio-login" style = "float: right"> 
+      <button (click) = "irAlLogin()"  >
+        Ingresar
+      </button>
     </div>
-    
-  </nav>
-
-</header>
+  
+    <h1 class = "logotipo"> ChangoMarket </h1>
+  
+    <nav>
+  
+      <div class = "botones-navegador">
+        <button (click) = "irAlInicio()" class = "activo" >
+          Inicio
+        </button>
+        <button (click) = "irAProductos()"  >
+          Productos
+        </button>
+        <button (click) = "irAOfertas()"  >
+          Ofertas
+        </button>
+        <button (click) = "irANosotros()"  >
+          Nosotros
+        </button>
+        <button (click) = "irASedes()"  >
+          Sedes
+        </button>
+      </div>
+      
+    </nav>
+  
+  </header>

@@ -3,7 +3,7 @@
 	margin: auto;
 }
 
-/* ---- ----- ----- PRODUCTO PRINCIPAL ----- ----- ----- */
+/* ---- ----- ----- PRINCIPAL ----- ----- ----- */
 .principal {
 	font-size: 16px;
 	min-height: 40.62em;
@@ -16,5 +16,3 @@
 	align-items: end;
     margin-top: 10px;
 }
-
-/* ---- ----- ----- SLIDE DE PRODUCTOS ----- ----- ----- */

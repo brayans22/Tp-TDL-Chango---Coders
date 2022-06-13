@@ -8,6 +8,7 @@ import { NosotrosComponent } from './nosotros/nosotros.component';
 import { SedesComponent } from './sedes/sedes.component';
 
 const routes: Routes = [
+  {path:'', component:HomeComponent},
   {path:'inicio', component:HomeComponent},
   {path:'productos', component:ProductosComponent},
   {path:'ofertas', component:OfertasComponent},

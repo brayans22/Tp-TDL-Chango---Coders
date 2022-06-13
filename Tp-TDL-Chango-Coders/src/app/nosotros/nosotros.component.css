@@ -1,6 +1,41 @@
-.contenedor {
-	width: 90%;
+.imagen{
+	border-top-left-radius: 50% 50%;
+	border-top-right-radius: 50% 50%;
+	border-bottom-right-radius: 50% 50%;
+	border-bottom-left-radius: 50% 50%;
+	margin-top: 10px;
+	margin-left: 60px;
+	margin-right: 10px;
+	height: 240px;
+	width: 240px;
+}
+
+.titulo {
+	margin-top: 20px;
+	margin-left: 110px;
+	font-size: 16px;
+}
+
+.texto {
+	margin-top: 10px;
+	margin-left: 50px;
+	font-size: 14px;
+	
+}
+
+.contenedor{
+	width: 100%;
+	max-width: 1200px;
+	height: 430;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
 	margin: auto;
+}
+
+.contenedor .tarjeta{
+	width: 338px;
+	height: 430px;
 }
 
 /* ---- ----- ----- PRINCIPAL ----- ----- ----- */
@@ -8,11 +43,9 @@
 	font-size: 16px;
 	min-height: 40.62em;
 	color: #fff;
-	background: linear-gradient( rgba(255, 55, 55, 0.768) 40%, rgba(248, 233, 233, 0.768) 60% );
+	background: linear-gradient( rgba(255, 55, 55, 0.768) 75%, rgba(248, 233, 233, 0.768) 99% );
     background-position: center center;
 	background-size: cover;
 	margin-bottom: 3.12em;
 	display: flex;
-	align-items: end;
-    margin-top: 10px;
 }

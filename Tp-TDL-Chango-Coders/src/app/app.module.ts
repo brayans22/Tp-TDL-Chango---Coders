@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -13,6 +14,8 @@ import { ProductosComponent } from './productos/productos.component';
 import { OfertasComponent } from './ofertas/ofertas.component';
 import { NosotrosComponent } from './nosotros/nosotros.component';
 import { SedesComponent } from './sedes/sedes.component';
+import { HttpClientModule } from '@angular/common/http';
+import { RouterModule, Routes } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -29,7 +32,9 @@ import { SedesComponent } from './sedes/sedes.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    RouterModule,
+    HttpClientModule,
   ],
   providers: [DataServices],
   bootstrap: [AppComponent]

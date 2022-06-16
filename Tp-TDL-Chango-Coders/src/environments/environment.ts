@@ -3,7 +3,17 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  firebaseConfig : {
+    apiKey: "AIzaSyAyCTolSff6qfPpBtxegg3MIVH3j_Eb7Go",
+    authDomain: "chango-market.firebaseapp.com",
+    databaseURL: "https://chango-market-default-rtdb.firebaseio.com",
+    projectId: "chango-market",
+    storageBucket: "chango-market.appspot.com",
+    messagingSenderId: "281633579876",
+    appId: "1:281633579876:web:d47e65420dd00837fd1071",
+    measurementId: "G-PZZXRYB3S4"
+  }
 };
 
 /*

@@ -1,6 +1,80 @@
-.contenedor {
-	width: 90%;
+.imagen{
+	border-top-left-radius: 50% 50%;
+	border-top-right-radius: 50% 50%;
+	border-bottom-right-radius: 50% 50%;
+	border-bottom-left-radius: 50% 50%;
+	margin-top: 10px;
+	margin-left: 60px;
+	margin-right: 10px;
+	height: 260px;
+	width: 260px;
+}
+
+.titulo-seccion-top{
+	margin-top: 80px;
+	margin-block-end: 80px;
+	margin-left: 1040px;
+	border-radius: 50px;
+	margin-right: 1000px;
+}
+
+.contenedor .titulo-seccion-top{
+	background-color: rgba(236, 142, 142, 0.768);
+}
+
+.titulo-seccion-medio{
+	margin-top: 90px;
+	margin-block-end: 40px;
+	margin-left: 1040px;
+	border-radius: 50px;
+	margin-right: 1000px;
+}
+
+.contenedor .titulo-seccion-medio{
+	background-color: rgba(236, 142, 142, 0.768);
+}
+
+.botones-productos{
+	background-color: rgba(255, 55, 55, 0.768);
+	border-radius: 200px;
+	margin-left: 100px;
+	width: 160px;
+	color: white;
+}
+
+.titulo {
+	margin-top: 20px;
+	margin-left: 130px;
+	font-size: 16px;
+}
+
+.texto {
+	margin-top: 10px;
+	margin-left: 50px;
+	font-size: 14px;
+	
+}
+
+.contenedor{
+	width: 100%;
+	max-width: 1200px;
+	height: 430;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
 	margin: auto;
+	margin-block-end: 100px;
+}
+
+.contenedor .tarjeta{
+	width: 308px;
+	height: 430px;
+}
+
+.contenedor .tarjeta-final{
+	width: 308px;
+	height: 430px;
+	margin-block-end: 200px;
 }
 
 /* ---- ----- ----- PRINCIPAL ----- ----- ----- */
@@ -8,11 +82,9 @@
 	font-size: 16px;
 	min-height: 40.62em;
 	color: #fff;
-	background: linear-gradient( rgba(255, 55, 55, 0.768) 75%, rgba(248, 233, 233, 0.768) 99% );
+	background: linear-gradient( rgba(255, 55, 55, 0.768) 75%, rgba(240, 125, 125, 0.768) 99% );
     background-position: center center;
 	background-size: cover;
 	margin-bottom: 3.12em;
 	display: flex;
-	align-items: end;
-    margin-top: 10px;
 }

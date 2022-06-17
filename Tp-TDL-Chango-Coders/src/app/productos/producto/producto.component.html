@@ -1,0 +1,23 @@
+<!--- CONTENIDO PAGINA DE PRODUCTOS -->
+
+<body>
+
+	<div class = "img-container">
+		<img src = "{{ producto.urlImagen}}" alt = "{{ producto.nombre }}" />
+	</div>
+	<div class = "info">
+	
+	  <span>
+		<strong>{{ producto.nombre }}</strong>
+	  </span>
+	
+	  <span>
+		Precio: {{ producto.precio }} pesos
+	  </span>
+	
+	</div>
+	<button (click) = "agregarProducto()" title = "Añadir al Carrito">
+	  <img src = "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/OOjs_UI_icon_add.svg/1200px-OOjs_UI_icon_add.svg.png" alt="+" />
+	</button>
+
+</body>

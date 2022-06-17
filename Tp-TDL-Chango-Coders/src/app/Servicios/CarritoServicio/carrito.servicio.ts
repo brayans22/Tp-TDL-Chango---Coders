@@ -22,9 +22,8 @@ export class CarritoService {
 
   BorrarProductoDelCarrito( productoEliminado: IProducto ): void {
     this.productosCarrito = this.productosCarrito.filter( 
-      (productoEnElCarrito) => productoEliminado != productoEnElCarrito 
+      (productoEnElCarrito) => productoEliminado !== productoEnElCarrito 
     )
 
   }
-  
 }

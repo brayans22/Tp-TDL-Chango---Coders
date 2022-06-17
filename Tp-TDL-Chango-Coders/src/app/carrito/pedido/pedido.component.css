@@ -2,7 +2,8 @@
 
 header {
 	padding: 30px 0;
-    background-color: rgba(250, 250, 250, 0.966);
+  background-color: rgba(250, 250, 250, 0.966);
+  border-radius: 90px;
 }
 
 header .contenedor {
@@ -41,21 +42,24 @@ header .logotipo {
 	font-size: 40px;
 	margin-top: 2px;
 	margin-left: 85px;
-    margin-block-end: 20px;
+  margin-block-end: 10px;
 }
 
 header .espacio-login {
-	margin-left: 500px;
+  margin-top: 0px;
+	margin-left: 450px;
 	margin-right: 100px;
-    max-height: 10px;
+  max-height: 1px;
+  max-width: 1200px;
 
 }
 
 header .espacio-carrito {
+  margin-top: -100px;
 	margin-left: 30px;
     max-height: 120px;
     margin-right: 100px;
-	margin-block-end: 30px;
+	margin-block-end: 10px;
 }
 
 header .espacio-login button,
@@ -107,19 +111,80 @@ img {
     font-weight: 600;
 }
 
-/* 
-
-agregar cuando lo implementemos
-
-<span class = "logo"> Chango Market </span>
-
-  <button class = "cart" (click) = "onCartClicked()" >
-
-    <img src = "https://cdn-icons-png.flaticon.com/512/1250/1250712.png" alt = "Abrir Carrito" />
+:host {
+  position: absolute;
+  top: 50px;
+  width: 95.9%;
+  height: 95.9%/*calc(100vh - 50px)*/;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
+  padding: 28px;
+  background: linear-gradient( rgba(255, 55, 55, 0.768) 75%, rgba(248, 233, 233, 0.768) 99% );
+  overflow-y: auto;
+}
+  
+  .title {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 54px;
+    color:white;
+  }
+  
+  .total-label {
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+  
+  .total {
+    font-size: 24px;
+    font-weight: 600;
+    align-self: flex-end;
+    margin-top: 54px;
+    color: white;
+  }
+  
+  button {
     
-    <span>{{ itemsCount }}</span>
+    background-color: rgba(255, 55, 55, 0.768);
+    border-radius: 200px;
+    margin-left: 400px;
+    width: 300px;
+    color: white;
+  }
 
-  </button>
+  
+  button:hover,
+  button:focus {
+    background-color: rgba(255, 55, 55, 0.768);
+    outline: none;
+  }
+  
+  button:disabled {
+    background-color: rgba(255, 55, 55, 0.768);
+    color: rgb(255, 250, 250);
+    cursor: not-allowed;
+  }
 
+  /* Para el icono del carrito */
 
-*/
+img {
+  width: 22px;
+  height: auto;
+}
+
+.boton-chango {
+margin-left: 1500px;
+width: 50px;
+}
+
+.texto-carrito {
+  top: 0;
+  margin-top: 0px;
+  font-size: 14px;
+  color: rgb(235, 76, 76);
+  font-weight: 200px;
+}

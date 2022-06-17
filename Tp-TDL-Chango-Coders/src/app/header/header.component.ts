@@ -1,5 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { Router } from '@angular/router';
+import { CarritoService } from '../Servicios/CarritoServicio/carrito.servicio';
+
 
 @Component({
   selector: 'app-header',
@@ -9,9 +11,18 @@ import { Router } from '@angular/router';
 
 export class HeaderComponent implements OnInit {
 
-  constructor(private router: Router) { }
+  ngOnInit(): void {}
 
-  ngOnInit(): void {
+  constructor(private router: Router, private servicioCarrito: CarritoService) { }
+
+  @Output() CambiarVisibilidadCarrito = new EventEmitter<void>();
+
+  get cantidadProductosCarrito(): number {
+    return this.servicioCarrito.cantidadTotalProductosEnElCarrito;
+  }
+
+  irAlCarrito(): void {
+    this.router.navigate(['/carrito']);
   }
 
   irAlLogin(){
@@ -39,3 +50,5 @@ export class HeaderComponent implements OnInit {
   }
 
 }
+
+  

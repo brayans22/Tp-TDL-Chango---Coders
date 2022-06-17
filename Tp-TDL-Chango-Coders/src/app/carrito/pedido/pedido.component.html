@@ -1,0 +1,45 @@
+
+<header class = "contenedor" >
+  
+
+  <div class = "espacio-login" style = "float: right"> 
+
+    <button class = "login" (click) = "irAlLogin()"  >
+      Ingresar
+    </button>
+
+    <button class = "espacio-carrito" (click) = "irAlInicio()" >
+
+      <img src = "https://cdn-icons-png.flaticon.com/512/1250/1250712.png" alt = "Abrir Carrito" />
+
+    </button>
+
+  </div>
+
+  <div>
+
+    <h1 class = "logotipo"> ChangoMarket </h1>
+    
+  </div>
+
+</header>
+
+<p class = "title" > Mi Carrito </p>
+
+  <app-carrito
+    *ngFor = "let producto of productosCarrito"
+    [productoAgregado] = "producto"
+    (productoEliminado) = "sacarProductoDelCarrito(producto)"
+  ></app-carrito>
+
+  <p class = "total"> <span class = "total-label"> total: </span> {{ total }} pesos </p>
+
+  <button> Finalizar Pedido </button>
+
+
+
+
+
+
+
+

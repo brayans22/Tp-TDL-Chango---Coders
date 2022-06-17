@@ -1,0 +1,17 @@
+<img
+  src = "{{ productoAgregado?.urlImagen }}"
+  alt = "{{ productoAgregado?.nombre}}"
+  class = "thumbnail"
+/>
+
+<div class = "info">
+  <span>{{ productoAgregado?.nombre }}</span>
+  <span class = "info-price">
+    {{ productoAgregado?.precio }} pesos <br>
+    producto de calidad
+  </span>
+</div>
+
+<button (click) = "clickEnBotonEliminarProductoDelCarrito()">
+  <img src = "https://cdn.pixabay.com/photo/2012/04/24/11/23/cross-39414_960_720.png" alt = "Eliminar articulo" />
+</button>

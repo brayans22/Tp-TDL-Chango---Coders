@@ -30,6 +30,7 @@ export class RegistroComponent implements OnInit {
   registro(){
     this.loginService.registrarse(this.email, this.password)
       .then( res => {
+        console.log(res);
         this.router.navigate(['/']);
       })
       .catch(error => {

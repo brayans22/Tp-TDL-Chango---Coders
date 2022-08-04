@@ -17,10 +17,10 @@ export class ClienteServicio{
 
     getClientes(): Observable<Cliente[]>{
         //Obtener los clientes
-        this.clientes = this.clientesColeccion.snapshotChanges().pipe(
-            map( cambios => {
+        this.clientes = this.clientesColeccion.snapshotChanges().pipe(  //recupera la coleccion
+            map( cambios => {    //recupero los elementos
                 return cambios.map( accion => {
-                    const datos = accion.payload.doc.data() as Cliente;
+                    const datos = accion.payload.doc.data() as Cliente; // el payload, id y datos del cliente en la respuesta
                     datos.id = accion.payload.doc.id;
                     return datos;
                 })
